@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!-- [if gt IE 8]>      <html class="no-js"> <![endif] -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grab A Cone</title>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.30/vue.global.min.js"></script>
+        <script src="components.js" type="module"></script>
+        <link rel="shortcut icon" type="image/png" href="./favicon.ico"/>        
+        <meta name="description" content="">
+        <meta name="theme-color" content="rgba(226,110,214,.96)"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,200" />    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+          <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <body>
+            <div id="app">
+                <my-header class="sm-header"></my-header>
+                <lg-header class="lg-header"></lg-header>
+                    <main class="main-content">
+                            <img id="desktop-banner" src="./imgs/banner-cones.png" alt="Cups of different flavors of ice cream"></img>
+                        <section class="homepage-text lg ">
+                            <h1 class="cursive-font heading-styles lg">Experience Wisconsin's Best Ice Cream</h1>
+                            <p class="homepage-text-p">At Grab A Cone, we're all about the good stuff – ice cream 
+                                that'll make your day. We proudly scoop up Chocolate Shoppe Ice Cream, a local favorite
+                                 that's been making folks smile for over 50 years. Visit us today, relax, and treat yourself
+                                  to a delightful variety of flavors!</p>
+                         </section>
+                        <article class="gac-banner">
+                            <picture>
+                                <source media="(min-width: 1280px)" srcset="./imgs/icecream-wide.png">
+                                <source media="(min-width: 680px)" srcset="./imgs/icecream-wide.png">
+                                <source media="(min-width: 320px)" srcset="./imgs/icecream-wide-min.png">
+                                <img src="./imgs/icecream-wide-min.png" alt="A cup of Chocolate Shoppe Ice Cream" class="banner-img home">
+                            </picture>
+                            <picture>
+                                <source media="(min-width: 1280px)" srcset="./imgs/chocolateshoppe.jpg">
+                                <source media="(min-width: 680px)" srcset="./imgs/chocolateshoppe.jpg">
+                                <source media="(min-width: 320px)" srcset="./imgs/chocolateshoppe.jpg">
+                                <img src="./imgs/chocolateshoppe.jpg" alt="Chocolate Shoppe Logo" class="banner-img logo">
+                            </picture>                        
+                        </article>
+                        <article class="banner-text premium">
+                            <section class="homepage-text sm">
+                                    <p class="secondary-heading-styles heading-styles left-style"><b>Experience</b></p>
+                                    <h2 class="cursive-font heading-styles" style="text-align: center"><b>Wisconsin's Best</b></h2>
+                                    <p class="secondary-heading-styles heading-styles right-style"><b>Ice Cream</b></p>
+                            </section>
+                        </article>
+                        <!-- extra content - only visible on desktop view -->
+                        <article class="banner-text facebook desktop">
+                            <section class="homepage-text">
+                                <h2 class="cursive-font heading-styles">Indulge In Premium Ice Cream</h2>
+                                    <p class="homepage-text-p">Crafted with love and tradition in the heart of America's Dairyland, Chocolate Shoppe Ice Cream is renowned for its rich and velvety texture. We believe in quality above all else, and that's why we've chosen Chocolate Shoppe as the star of our show. Every scoop is a taste of pure Midwest magic.</p>
+                            </section>
+                        </article>
+                        <article class="gac-banner">
+                            <picture>
+                                <source media="(min-width: 1280px)" srcset="./imgs/bread.png" alt="Picture of freshly baked banana bread">
+                                <source media="(min-width: 680px)" srcset="./imgs/bread-min.png" alt="Picture of freshly baked banana bread">
+                                <source media="(min-width: 320px)" srcset="./imgs/bread-min.png" alt="Picture of freshly baked banana bread">
+                                <img src="./imgs/bread-min.png" alt="Picture of freshly baked banana bread" class="banner-img bread">
+                            </picture>
+                        </article>
+                        <article class="banner-text facebook">
+                            <section class="homepage-text facebook">
+                                <h2 class="cursive-font heading-styles">Stay in the loop</h2>
+                                    <p class="homepage-text-p">Follow us on Facebook for updates on new flavors, meal specials, and our soup of the week!
+                                        <br><br>
+                                        <a target="_blank" id="home-fb-icon" href="https://www.facebook.com/profile.php?id=100057554945422" alt='link to facebook page'><i class="fa-brands fa-facebook"></i></a>
+                                    </p>
+                                    <div id="social-photos-container">
+                                        <img class="social-photos" src="./imgs/woodencone.jpeg" alt="A wooden cone with 'Grab A Cone' carved into it">
+                                        <img class="social-photos" src="./imgs/sundae.jpeg" alt="Chocolate Shoppe Peanut Butter Pretzel Sundae">
+                                        <img class="social-photos" src="./imgs/breads.jpeg" alt="Cup of Electric Watermelon Italian Ice">
+                                        <img class="social-photos" src="./imgs/watermelon.jpeg" alt="Cup of Electric Watermelon Italian Ice">
+                                        <img class="social-photos" src="./imgs/sandwich.jpeg" alt="A burger with cheddar cheese on local sourdough bread">
+                                    </div>
+                            </section>
+                        </article>
+                    </main>
+                <my-footer class="sm-footer"></my-footer>
+                <lg-footer id="desktop-footer" class="lg-footer"></lg-footer>
+            </div>
+            <script src="script.js" async defer></script>
+    </body>
+</html>
